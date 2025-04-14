@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1 class="title">3x3</h1>
+    <div class="table">
+        <option id="cuadro" class="a1"></option>
+        <option id="cuadro" class="a2"></option>
+        <option id="cuadro" class="a3"></option>
+        <option id="cuadro" class="b1"></option>
+        <option id="cuadro" class="b2"></option>
+        <option id="cuadro" class="b3"></option>
+        <option id="cuadro" class="c1"></option>
+        <option id="cuadro" class="c2"></option>
+        <option id="cuadro" class="c3"></option>
+    </div>
+    <h2 class="title"> Ganador: Player 2</h2>
+    <script>
+
+        // Selecciona todos los elementos de una vez
+        const cuadros = document.querySelectorAll("[id^='cuadro']");
+        
+        // Itera sobre cada cuadro
+        cuadros.forEach(cuadro => {
+
+            cuadro.onclick = function() {
+                this.innerHTML = "x";
+
+                if(this.innerHTML === "x"){
+                    this.style.background = "green";
+                    this.style.color = "white";
+                }
+            }
+            cuadro.ondblclick = function() {
+                this.innerHTML = "o";
+
+                if(this.innerHTML === "o"){
+                    this.style.background = "orange";
+                    this.style.color = "white";
+                }
+            }
+            
+        });
+
+        
+
+    </script>
+    
+</body>
+</html>
