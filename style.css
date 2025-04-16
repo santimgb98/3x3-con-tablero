@@ -10,6 +10,14 @@ body{
     border-width: 0.3em;
     border-color: rgb(182, 140, 114);
 }
+#footer{
+    text-align: center;
+    font-size: 3em;
+    background: rgb(254, 255, 213);
+    border-style: ridge;
+    border-width: 0.3em;
+    border-color: rgb(182, 140, 114);
+}
 .table{
     border-color: black;
     border-style: ridge;

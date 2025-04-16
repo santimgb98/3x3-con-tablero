@@ -19,11 +19,12 @@
         <option id="cuadro" class="c2"></option>
         <option id="cuadro" class="c3"></option>
     </div>
-    <h2 class="title"> Ganador: Player 2</h2>
+    <h2 id="footer"></h2>
     <script>
 
         // Selecciona todos los elementos de una vez
         const cuadros = document.querySelectorAll("[id^='cuadro']");
+        const footer = document.getElementById("footer");
         
         // Itera sobre cada cuadro
         cuadros.forEach(cuadro => {
@@ -44,9 +45,8 @@
                     this.style.color = "white";
                 }
             }
-            
         });
-
+        
         
 
     </script>
